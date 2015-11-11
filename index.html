@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validation</title>
+	<script src="jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<div class="form-wrapper">
+			<form action="">
+				<label for="fio">Введите ФИО: </label>
+				<input type="text" id="fio" placeholder="Петров Николай Валентинович">
+				<p class="error-message">Неверно введены данные</p>
+			</form>
+		</div>
+		<div class="form-data">
+			<p>Фамилия: <span class="last-name"></span></p>
+			<p>Имя: <span class="first-name"></span></p>
+			<p>Отчество: <span class="patronymic"></span></p>
+			<input type="button" id="summit-button" value="Подтвердить">
+		</div>
+	</div>
+	<div class="pop-up">
+		<div class="pop-up-message">
+			<span class="close-button">X</span>
+			Добро пожаловать, <br>
+			<span class="last-name"></span> <span class="first-name"></span> <span class="patronymic"></span>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
